@@ -5,8 +5,8 @@ import logo from './logo.svg';
 //let Component = React.Component
 import './App.css';
 
-import Header from './Components/Header/Header.js';
-//import Main from './Components/Header/Main.js';
+import Header from './Components/Header/Header.jsx';
+import Main from './Components/Main/Main.jsx';
 
 
 class App extends Component {
@@ -19,6 +19,7 @@ class App extends Component {
 
       </header>
       <main>
+        <Main/>
       </main>
     </div>
   );

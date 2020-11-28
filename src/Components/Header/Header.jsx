@@ -3,8 +3,8 @@ import React, {Component} from 'react';
 class Header extends Component{
 //every component must render something
 state = {
-    name : '(Name)',
-    city : '(City)'
+    name : 'Sarah Kado',
+    city : 'Saint Paul, MN'
 }
 //event handlers need arrow functions to work
 handleNameChange = (event) => {
@@ -36,13 +36,21 @@ render(){
     //{} on JSX are our window into javascript variables
     return (   
         <>
-        <h1>Hello From Header!</h1>
+        <section id="helloSection"> 
+        <h1>My name is {this.state.name}.</h1>
+        <h2>I am from {this.state.city}.</h2>
+        </section>
         <div>
             <input placeholder="Name" onChange={this.handleNameChange} />
             <input placeholder="City" onChange={this.handleCityChange} />
             <button onClick={this.showState}>Show State</button>
-    <p>Hello. My name is {this.state.name}. I am from {this.state.city}.</p>
-       {/* this is a comment in JSX land */}
+            
+            <section id="links"> 
+                <a href="https://github.com/JoelleKado">GitHub</a>
+                <br/>
+                <a href="https://www.linkedin.com/in/joellekado/">LinkedIn</a>
+            </section>
+            {/* this is a comment in JSX land */}
         </div>
         </>
     )
