@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+//header comment
 
 class Header extends Component{
 //every component must render something
