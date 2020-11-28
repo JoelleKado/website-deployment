@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 //header comment
-
+//another test comment
 class Header extends Component{
 //every component must render something
 state = {
