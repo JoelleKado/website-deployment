@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 class Header extends Component{
 //every component must render something
 state = {
-    name : 'Sarah Kado',
+    name : 'Joelle Kado',
     city : 'Saint Paul, MN'
 }
 //event handlers need arrow functions to work
@@ -49,9 +49,9 @@ render(){
             </h3>
         </section>
         <div>
-            <input placeholder="Name" onChange={this.handleNameChange} />
-            <input placeholder="City" onChange={this.handleCityChange} />
-            <button onClick={this.showState}>Show State</button>
+            {/* <input placeholder="Name" onChange={this.handleNameChange} /> */}
+            {/* <input placeholder="City" onChange={this.handleCityChange} /> */}
+            {/* <button onClick={this.showState}>Show State</button> */}
             
             <section class="pinkClass"> 
             <h3>The Professional</h3>
